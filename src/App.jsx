@@ -7,12 +7,14 @@ import './App.css'
 // import FunctionEvent from './components/FunctionEvent'
 // import ClassEvent from './components/ClassEvent'
 // import FunctionalCounter from './components/FunctionalCounter'  
-import ConditionalRendering from './components/ConditionalRendering'
+// import ConditionalRendering from './components/ConditionalRendering'
+import Product from './components/Product'
+
 
 function App() {
   return (
     <div className="App">
-      <ConditionalRendering />
+     <Product/>
     </div>
   )
 }

@@ -1,22 +1,16 @@
 import { useState } from 'react'
-import Counter from './Counter'
-import FunctionalCounter from './FunctionalCounter'
+// import Counter from './Counter'
+// import FunctionalCounter from './FunctionalCounter'
 
 export default function ConditionalRendering() {
-    const [display, setDisplay] = useState(true);
-
-    if (display) {
-        return (
-            <div>
-                <h1>Conditional Rendering</h1>
-                <button onClick={() => setDisplay(false)}>Hide</button>
-                <Counter />
-                <FunctionalCounter />
-            </div>
-        );
-    } else {
-        return (
-            <div>This component is hidden</div>
-        )
-    }
+    const [display, setDisplay] = useState(false);
+    return display ? (
+    <div> 
+        <h3>This is a conditional component</h3>
+        </div>
+        ) : (
+    <div>
+        <h3>Nothing to see here</h3>
+        </div>
+    );
 }
